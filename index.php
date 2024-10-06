@@ -74,32 +74,33 @@
     <div class="container d-flex justify-content-center">
       <div class="card mt-5 px-3 py-4">
         <div class="d-flex flex-row justify-content-around">
-          <div class="mpesa"><span>Mpesa </span></div>
-          <div><span>Paypal</span></div>
-          <div><span>Card</span></div>
+        <div class="mpesa" style="width: 100%; background-color: lightgray; text-align: center;"><span>Mpesa </span></div>
+
+          <!-- <div><span>Paypal</span></div>
+          <div><span>Card</span></div> -->
         </div>
-        <div class="media mt-4 pl-2">
-          <img src="./images/1200px-M-PESA_LOGO-01.svg.png" class="mr-3" height="75" />
-          <div class="media-body">
-            <h6 class="mt-1">Enter Amount & Number</h6>
-          </div>
+        <div class="media mt-4 pl-2" style="display: flex; align-items: center; padding-left: 10px;">
+          <h3 style="margin-right: 15px; font-size: 30px;">Lipa na</h3>
+          <img src="./images/1200px-M-PESA_LOGO-01.svg.png" height="100" style="margin-right: 10px;" alt="Mpesa Logo"/>
         </div>
+
         <div class="media mt-3 pl-2">
                           <!--bs5 input-->
 
             <form class="row g-3" action="./stk_initiate.php" method="POST">
             
                 <div class="col-12">
-                  <label for="inputAddress" class="form-label">Amount</label>
-                  <input type="text" class="form-control" name="amount" placeholder="Enter Amount">
-                </div>
-                <div class="col-12">
                   <label for="inputAddress2" class="form-label" >Phone Number</label>
                   <input type="text" class="form-control" name="phone"  placeholder="Enter Phone Number">
                 </div>
-             
+
                 <div class="col-12">
-                  <button type="submit" class="btn btn-success" name="submit" value="submit">Donate</button>
+                  <label for="inputAddress" class="form-label">Amount</label>
+                  <input type="text" class="form-control" name="amount" placeholder="Enter Amount">
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-success" name="submit" value="submit">Pay</button>
                 </div>
               </form>
               <!--bs5 input-->
